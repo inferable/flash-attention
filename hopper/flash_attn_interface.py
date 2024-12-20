@@ -512,7 +512,7 @@ def flash_attn_with_kvcache(
     cache_seqlens: Optional[Union[(int, torch.Tensor)]] = None,
     cache_batch_idx: Optional[torch.Tensor] = None,
     # cache_leftpad: Optional[torch.Tensor] = None,
-    # block_table: Optional[torch.Tensor] = None,
+    block_table: Optional[torch.Tensor] = None,
     softmax_scale=None,
     causal=False,
     window_size=(-1, -1),  # -1 means infinite context window
